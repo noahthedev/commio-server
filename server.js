@@ -3,10 +3,6 @@ const fetch = require('node-fetch')
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
-})
-
 app.get('/:beerStyle', (req,res) => {
     const { beerStyle } = req.params;
     const url = `https://api.punkapi.com/v2/beers/?beer_name=${beerStyle}`
