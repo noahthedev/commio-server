@@ -12,6 +12,6 @@ app.get('/:beerStyle', (req,res) => {
         .then(data => res.send(data))
 })
 
-app.listen(8000, () => {
+app.listen(3000, () => {
     console.log('Server listening at http://localhost:8000')
 })
